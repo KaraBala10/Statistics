@@ -1,0 +1,30 @@
+*{
+    background-color: rgb(33, 53, 84);
+    color: rgba(255, 255, 255, 0.799);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: larger;
+    border-radius: 5px;
+}
+
+#textarea{
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    border: 3px solid rgb(2, 2, 2);
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text)
+}
+
+textarea{
+    text-align: left;
+    resize: none;
+}
